@@ -33,6 +33,15 @@ const Footer = () => {
         <div className='pt-16 pb-4'>
             <CardComponent />
         </div>
+        <div className="flex flex-col items-center justify-center gap-x-4 gap-y-3 py-8 text-center text-sm text-foreground xl:flex-row">
+          <span className="opacity-50 flex">© 2024&nbsp;
+            <div className="position:relative;white-space:pre-wrap;word-wrap:break-word">
+              <span>Orbit.</span>
+            </div>
+          </span>
+          <a target="_self" className="opacity-50 transition duration-200 hover:opacity-100" href="/privacy">All Rights Reserved</a>
+          <a target="_self" className="opacity-50 transition duration-200 hover:opacity-100" href="/privacy">Privacy policy</a>
+          <a target="_self" class="opacity-50 transition duration-200 hover:opacity-100" href="/terms">Terms of service</a></div>
       </main>
     </div>
   );
