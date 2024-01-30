@@ -6,7 +6,7 @@ const Footer = () => {
     <div>
       <main className="flex flex-col items-center justify-start p-10 h-screen">
         <div className="space-y-1 relative">
-          <h1 className="z-10 bg-gradient-to-br lg:h-[70px] w-full from-black to-stone-500 bg-clip-text text-center font-display text-2xl font-bold tracking-[-0.05em] text-transparent drop-shadow-sm [text-wrap:balance] md:text-5xl">
+          <h1 className="z-10 bg-gradient-to-br lg:h-[70px] w-full from-black to-stone-500 bg-clip-text text-center font-display text-2xl font-bold text-transparent drop-shadow-sm [text-wrap:balance] md:text-5xl">
             <div className="flex flex-col gap-3">
               <div>Still have questions?</div>
             </div>
