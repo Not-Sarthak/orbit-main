@@ -9,7 +9,7 @@ const Hero = () => {
         <div className="space-y-1 relative">
           <div className="flex justify-center">
             <a
-              href="https://twitter.com/0xSarthak13"
+              href="https://x.com/0rbitco"
               target="_blank"
               rel="noreferrer"
               className="mx-auto mb-5 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full bg-blue-200 bg-opacity-80 px-7 py-2 transition-colors hover:bg-blue-300 hover:bg-opacity-80"
@@ -29,15 +29,14 @@ const Hero = () => {
               </p>
             </a>
           </div>
-          <h1 className="z-10 lg:h-[180px] h-[100px] bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.05em] text-transparent drop-shadow-sm [text-wrap:balance] md:text-7xl">
-            <div className="flex flex-col gap-3">
-              <div>Building blocks for</div>
-              <div>your Next project</div>
+          <h1 className="z-10 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.05em] text-transparent drop-shadow-sm [text-wrap:balance] md:text-7xl">
+            <div className="flex flex-col">
+              <div>Bridging Real-World Data</div>
+              <div>to AOS effortlessly.</div>
             </div>
           </h1>
-          <p className="text-center text-gray-500 text-wrap:balance md:text-xl ">
-            An opinionated collection of components, <br /> hooks, and utilities
-            for your Next.js project.
+          <p className="text-center text-gray-500 text-wrap:balance md:text-xl pt-4">
+            The missing piece is effortlessly<br /> connecting any real-world data to AOS
           </p>
         </div>
         <div className='flex gap-4 pt-4'>
