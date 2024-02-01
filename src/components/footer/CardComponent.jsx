@@ -7,7 +7,7 @@ const CardComponent = () => {
   return (
     <div className='flex flex-wrap items-start gap-10 lg:gap-48 p-20 py-10 rounded-2xl bg-blue-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100'>
         <img src={logo} alt="logo" className="flex justify-start" />
-        <div className='flex flex-wrap flex-col md:flex-row lg:gap-40 justify-center'>
+        <div className='flex flex-wrap flex-col md:flex-row lg:gap-40 gap-10 justify-center'>
             <CardSection
                 title="Product"
                 links={[
@@ -40,11 +40,3 @@ const CardComponent = () => {
 };
 
 export default CardComponent;
-
-{/* <div className="w-full flex justify-between rounded-2xl p-10 px-32 bg-blue-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100">
-        <img src={logo} alt="logo" className="w-40 bg-red-400" />
-    <div className='bg-black'>
-        
-    </div>
-    
-    </div> */}

@@ -4,19 +4,19 @@
 
 @keyframes moveShadow {
   0% {
-    box-shadow: 10px 0 10px 0 #6ce5d9b9;
+    box-shadow: 10px 0 10px 0 #d1eeff;
   }
   25% {
-    box-shadow: 0 10px 10px 0 #6ce5d9b9;
+    box-shadow: 0 10px 10px 0 #d1eeff;
   }
   50% {
-    box-shadow: -10px 0 10px 0 #6ce5d9b9;
+    box-shadow: -10px 0 10px 0 #d1eeff;
   }
   75% {
-    box-shadow: 0 -10px 10px 0 #6ce5d9b9;
+    box-shadow: 0 -10px 10px 0 #d1eeff;
   }
   100% {
-    box-shadow: 10px 0 10px 0 #6ce5d9b9;
+    box-shadow: 10px 0 10px 0 #d1eeff;
   }
 }
 
