@@ -16,7 +16,7 @@ const Features = () => {
             <h2 class="bg-gradient-to-br from-black to-stone-500 bg-clip-text font-display text-xl font-bold text-transparent [text-wrap:balance] md:text-3xl md:font-normal">
               Cost-Effective Data Access
             </h2>
-            <p className='text-center'>Redefining data access economics, our decentralized approach ensures cost-effectiveness without compromising on quality.</p>
+            <p className='text-center text-gray-500'>Redefining data access economics, our decentralized approach ensures cost-effectiveness without compromising on quality.</p>
           </div>
         </div>
 
@@ -27,7 +27,7 @@ const Features = () => {
             <h2 class="bg-gradient-to-br from-black to-stone-500 bg-clip-text font-display text-xl font-bold text-transparent [text-wrap:balance] md:text-3xl md:font-normal">
               Permissionless
             </h2>
-            <p className='text-center'>Engage freely, without constraints.</p>
+            <p className='text-center text-gray-500'>Engage freely, without constraints.</p>
           </div>
         </div>
 
@@ -38,7 +38,7 @@ const Features = () => {
             <h2 class="bg-gradient-to-br from-black to-stone-500 bg-clip-text font-display text-xl font-bold text-transparent [text-wrap:balance] md:text-3xl md:font-normal">
               Secure
             </h2>
-            <p className='text-center'>Built on a foundation of permanence, our decentralized platform ensures the unalterable integrity of your data and transactions.</p>
+            <p className='text-center text-gray-500'>Built on a foundation of permanence, our decentralized platform ensures the unalterable integrity of your data and transactions.</p>
           </div>
         </div>
 
@@ -49,7 +49,7 @@ const Features = () => {
             <h2 class="bg-gradient-to-br from-black to-stone-500 bg-clip-text font-display text-xl font-bold text-transparent [text-wrap:balance] md:text-3xl md:font-normal">
               Decentralised
             </h2>    
-            <p className='text-center'>Redefining control, empowering users with a network that operates beyond central authority or single points of failure.</p>      
+            <p className='text-center text-gray-500'>Redefining control, empowering users with a network that operates beyond central authority or single points of failure.</p>      
           </div>
         </div>
 
@@ -60,7 +60,7 @@ const Features = () => {
             <h2 class="bg-gradient-to-br from-black to-stone-500 bg-clip-text font-display text-xl font-bold text-transparent [text-wrap:balance] md:text-3xl md:font-normal">
               Transparent
             </h2>    
-            <p className='text-center'>Illuminate every operation, fostering trust through a crystal-clear view of processes within our decentralized ecosystem.</p>      
+            <p className='text-center text-gray-500'>Illuminate every operation, fostering trust through a crystal-clear view of processes within our decentralized ecosystem.</p>      
           </div>
         </div>
       </div>
