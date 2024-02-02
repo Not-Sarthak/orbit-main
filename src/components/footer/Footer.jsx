@@ -1,9 +1,57 @@
 import React from 'react';
 import CardComponent from './CardComponent';
+import { useForm, ValidationError } from '@formspree/react';
+
+function ContactForm() {
+  const [state, handleSubmit] = useForm("xrgnpeaq");
+
+  if (state.succeeded) {
+    return <p className="text-green-500 pt-4">Thank you for reaching out! We will get back to you soon.</p>;
+  }
+
+  return (
+    <form onSubmit={handleSubmit} className="flex flex-col max-w-md mx-auto border border-zinc-200 p-4 rounded-2xl bg-white">
+      <label htmlFor="email" className="text-gray-700 mb-2">
+        Email Address
+      </label>
+      <input
+        id="email"
+        type="email"
+        name="email"
+        className="p-2 mb-4 rounded-md focus:outline-none focus:ring focus:border-blue-300 border border-zinc-300"
+      />
+      <ValidationError prefix="Email" field="email" errors={state.errors} />
+
+      <label htmlFor="message" className="text-gray-700 mb-2">
+        Message
+      </label>
+      <textarea
+        id="message"
+        name="message"
+        className="border border-zinc-300 p-2 mb-4 rounded-md focus:outline-none focus:ring focus:border-blue-300"
+      />
+      <ValidationError prefix="Message" field="message" errors={state.errors} />
+      <div className='flex justify-center'>
+        <button
+          type="submit"
+          disabled={state.submitting}
+          className="relative w-48 px-7 py-4 bg-[#eef5fd] hover:bg-gray-100 rounded-full flex items-center justify-center divide-x divide-gray-600 focus:outline-none focus:ring focus:border-blue-300"
+        >
+          <span className="flex items-center justify-center">
+            <span className="text-black group-hover:text-black transition duration-200">
+              {state.submitting ? "Submitting..." : "Submit"}
+            </span>
+          </span>
+        </button>
+      </div>
+    </form>
+  );
+}
 
 const Footer = () => {
   return (
-    <div>
+        <div className="inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
+    <div className="bg-[radial-gradient(circle_500px_at_50%_200px,#C9EBFF,transparent)]">
       <main className="flex flex-col items-center justify-start p-32 h-screen">
         <div className="space-y-1 relative">
           <h1 className="z-10 bg-gradient-to-br lg:h-[70px] w-full from-black to-stone-500 bg-clip-text text-center font-display text-2xl font-bold text-transparent drop-shadow-sm [text-wrap:balance] md:text-5xl">
@@ -16,7 +64,7 @@ const Footer = () => {
             for your Next.js project.
           </p>
         </div>
-        <div className='flex gap-4 pt-10'>
+        {/* <div className='flex gap-4 pt-10'>
             <div class="px-8">
                 <div class="grid gap-8 items-start justify-center">
                     <div class="relative group">
@@ -29,8 +77,11 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
+        </div> */}
+        <div className='py-10'>
+          <ContactForm />
         </div>
-        <div className='pt-16 lg:pt-56 pb-4'>
+        <div className='pb-4'>
             <CardComponent />
         </div>
         <div className="flex flex-col items-center justify-center gap-x-4 gap-y-3 py-8 text-center text-sm text-foreground xl:flex-row">
@@ -44,6 +95,7 @@ const Footer = () => {
           <a target="_self" class="opacity-50 transition duration-200 hover:opacity-100" href="/terms">Terms of service</a>
         </div>
       </main>
+    </div>
     </div>
   );
 };

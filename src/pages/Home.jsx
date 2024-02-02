@@ -20,8 +20,6 @@ export default function Home() {
         </div>
         <div>
           <Support />
-        </div>
-        <div>
           <Footer />
         </div>
       </div>
