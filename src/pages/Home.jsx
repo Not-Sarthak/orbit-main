@@ -1,6 +1,5 @@
 import Features from "../components/landing-page/Features";
 import Hero from "../components/landing-page/Hero";
-import Navbar from "../components/navbar/Navbar";
 import Support from "../components/supported-by/Support";
 import Services from "../components/services/Services";
 import Footer from "../components/footer/Footer";

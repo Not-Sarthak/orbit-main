@@ -4,7 +4,7 @@ import CardComponent from './CardComponent';
 const Footer = () => {
   return (
     <div>
-      <main className="flex flex-col items-center justify-start p-10 h-screen">
+      <main className="flex flex-col items-center justify-start p-32 h-screen">
         <div className="space-y-1 relative">
           <h1 className="z-10 bg-gradient-to-br lg:h-[70px] w-full from-black to-stone-500 bg-clip-text text-center font-display text-2xl font-bold text-transparent drop-shadow-sm [text-wrap:balance] md:text-5xl">
             <div className="flex flex-col gap-3">
@@ -30,7 +30,7 @@ const Footer = () => {
                 </div>
             </div>
         </div>
-        <div className='pt-16 pb-4'>
+        <div className='pt-16 lg:pt-56 pb-4'>
             <CardComponent />
         </div>
         <div className="flex flex-col items-center justify-center gap-x-4 gap-y-3 py-8 text-center text-sm text-foreground xl:flex-row">
