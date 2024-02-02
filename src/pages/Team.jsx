@@ -29,8 +29,20 @@ export default function Home() {
               <UserProfile profiles={profiles} />
             </div>
           </div>
-          <div className="hidden lg:flex justify-center items-center">
-            <CardComponent />
+          <div className="flex-col gap-10 lg:flex justify-center items-center">
+            <div className="hidden lg:flex">
+              <CardComponent />
+            </div>
+            <div className="flex flex-col items-center justify-center gap-x-4 pb-4 text-center text-sm text-foreground xl:flex-row">
+            <span className="opacity-50 flex">© 2024&nbsp;
+              <div className="position:relative;white-space:pre-wrap;word-wrap:break-word">
+                <span>0rbit.</span>
+              </div>
+            </span>
+            <a target="_self" className="opacity-50 transition duration-200 hover:opacity-100" href="/privacy">All Rights Reserved</a>
+            <a target="_self" className="opacity-50 transition duration-200 hover:opacity-100" href="/privacy">Privacy policy</a>
+            <a target="_self" class="opacity-50 transition duration-200 hover:opacity-100" href="/terms">Terms of service</a>
+          </div>
           </div>
         </div>
       </div>

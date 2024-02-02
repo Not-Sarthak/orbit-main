@@ -22,9 +22,11 @@ function Navbar() {
     <div className="inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
     <div className="bg-[radial-gradient(circle_500px_at_50%_200px,#C9EBFF,transparent)]">
     <div className="flex md:flex-row items-center justify-between px-4 md:px-28 py-2">
-      <div className="flex gap-2 items-center">
-        <img src={logo} alt="Logo" width={140} height={100} />
-      </div>
+      <Link to="/">
+        <button className="flex gap-2 items-center">
+          <img src={logo} alt="Logo" width={140} height={100} />
+        </button>
+      </Link>
       <div className="md:mt-0 md:flex items-center">
         <div className="md:hidden cursor-pointer" onClick={toggleMenu}>
           {isMenuOpen ? (

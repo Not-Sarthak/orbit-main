@@ -41,7 +41,8 @@ const Footer = () => {
           </span>
           <a target="_self" className="opacity-50 transition duration-200 hover:opacity-100" href="/privacy">All Rights Reserved</a>
           <a target="_self" className="opacity-50 transition duration-200 hover:opacity-100" href="/privacy">Privacy policy</a>
-          <a target="_self" class="opacity-50 transition duration-200 hover:opacity-100" href="/terms">Terms of service</a></div>
+          <a target="_self" class="opacity-50 transition duration-200 hover:opacity-100" href="/terms">Terms of service</a>
+        </div>
       </main>
     </div>
   );
