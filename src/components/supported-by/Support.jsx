@@ -4,7 +4,7 @@ import arweave from "../../assets/arweave-logo.png";
 import star from "../../assets/star.svg";
 
 const Support = () => {
-  const repeatedText = "ORBIT x ARWEAVE";
+  const repeatedText = "0RBIT x ARWEAVE";
 
   return (
     <div className="inset-0 -z-10 h-full w-full bg-black">

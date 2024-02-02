@@ -22,14 +22,14 @@ export default function Home() {
                 <div>"Meet the team behind the goal of providing <br /> authenticated real-world data in a trustless manner"</div>
               </div>
               <div className="md:flex flex-col lg:hidden">
-                <div>The Team behind Orbit</div>
+                <div>The Team behind 0rbit</div>
               </div>
             </h1>
             <div className="pt-10"> 
               <UserProfile profiles={profiles} />
             </div>
           </div>
-          <div className="hidden lg:flex">
+          <div className="hidden lg:flex justify-center items-center">
             <CardComponent />
           </div>
         </div>
