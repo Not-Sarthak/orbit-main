@@ -52,14 +52,14 @@ const Footer = () => {
   return (
         <div className="inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
     <div className="bg-[radial-gradient(circle_500px_at_50%_200px,#C9EBFF,transparent)]">
-      <main className="flex flex-col items-center justify-start p-32 h-screen">
+      <main className="flex flex-col items-center justify-start pt-20 lg:pt-32 h-screen w-full">
         <div className="space-y-1 relative">
           <h1 className="z-10 bg-gradient-to-br lg:h-[70px] w-full from-black to-stone-500 bg-clip-text text-center font-display text-2xl font-bold text-transparent drop-shadow-sm [text-wrap:balance] md:text-5xl">
             <div className="flex flex-col gap-3">
               <div>Still have questions?</div>
             </div>
           </h1>
-          <p className="text-center text-gray-500 text-wrap:balance md:text-xl ">
+          <p className="text-center text-gray-500 w-full md:text-xl">
             An opinionated collection of components, <br /> hooks, and utilities
             for your Next.js project.
           </p>
