@@ -10,7 +10,7 @@ function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col max-w-md mx-auto border border-zinc-200 p-4 rounded-2xl bg-white">
+    <form onSubmit={handleSubmit} className="flex flex-col max-w-md mx-auto lg:w-[620px] w-[350px]  p-4 rounded-2xl bg-white">
       <label htmlFor="email" className="text-gray-700 mb-2">
         Email Address
       </label>
@@ -28,14 +28,14 @@ function ContactForm() {
       <textarea
         id="message"
         name="message"
-        className="border border-zinc-300 p-2 mb-4 rounded-md focus:outline-none focus:ring focus:border-blue-300"
+        className="border border-zinc-300 p-2 mb-4 h-32 rounded-md focus:outline-none focus:ring focus:border-blue-300"
       />
       <ValidationError prefix="Message" field="message" errors={state.errors} />
       <div className='flex justify-center'>
         <button
           type="submit"
           disabled={state.submitting}
-          className="relative w-48 px-7 py-4 bg-[#eef5fd] hover:bg-gray-100 rounded-full flex items-center justify-center divide-x divide-gray-600 focus:outline-none focus:ring focus:border-blue-300"
+          className="relative px-6 py-2 bg-[#eef5fd] hover:bg-gray-100 rounded-full flex items-center justify-center divide-x divide-gray-600 focus:outline-none focus:ring focus:border-blue-300"
         >
           <span className="flex items-center justify-center">
             <span className="text-black group-hover:text-black transition duration-200">
