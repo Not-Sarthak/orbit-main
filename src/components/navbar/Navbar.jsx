@@ -35,7 +35,7 @@ function Navbar() {
             <IoMdMenu className="w-6 h-6 text-black" />
           )}
         </div>
-        <div className={`md:flex ${isMenuOpen ? 'flex flex-col' : 'hidden'}`}>
+        <div className={`md:flex mt-4 ${isMenuOpen ? 'flex flex-col' : 'hidden'}`}>
           {tabs.map((tab) => (
             <Link
               key={tab.id}
