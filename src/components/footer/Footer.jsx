@@ -1,50 +1,85 @@
 import React from 'react';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import CardComponent from './CardComponent';
 import { useForm, ValidationError } from '@formspree/react';
 
 function ContactForm() {
   const [state, handleSubmit] = useForm("xrgnpeaq");
 
-  if (state.succeeded) {
-    return <p className="text-green-500 pt-4">Thank you for reaching out! We will get back to you soon.</p>;
-  }
+  const handleSuccess = () => {
+    toast.success("Thank you for reaching out! We will get back to you soon.");
+  };
+
+  const handleError = (errorMessage) => {
+    toast.error(errorMessage);
+  };
+
+  const onSubmit = async (e) => {
+    e.preventDefault();
+
+    const emailField = e.target.elements.email;
+    const emailValue = emailField.value.trim();
+
+    if (!emailValue) {
+      handleError("Please enter your details");
+      return;
+    }
+
+    try {
+      await handleSubmit(e);
+
+      if (state.succeeded) {
+        handleSuccess();
+      } else if (state.errors && state.errors.length > 0) {
+        handleError("Please fill in all the required fields.");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      handleError("An error occurred while submitting the form. Please try again.");
+    }
+  };
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col max-w-md mx-auto lg:w-[620px] w-[350px]  p-4 rounded-2xl bg-white">
-      <label htmlFor="email" className="text-gray-700 mb-2">
-        Email Address
-      </label>
-      <input
-        id="email"
-        type="email"
-        name="email"
-        className="p-2 mb-4 rounded-md focus:outline-none focus:ring focus:border-blue-300 border border-zinc-300"
-      />
-      <ValidationError prefix="Email" field="email" errors={state.errors} />
+    <div>
+      <ToastContainer />
+      <form onSubmit={onSubmit} className="flex flex-col max-w-md mx-auto lg:w-[620px] w-[350px]  p-4 rounded-2xl bg-white">
+        <label htmlFor="email" className="text-gray-700 mb-2">
+          Email Address
+        </label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          className="p-2 mb-4 rounded-md focus:outline-none focus:ring focus:border-blue-300 border border-zinc-300"
+        />
+        <ValidationError prefix="Email" field="email" errors={state.errors} />
 
-      <label htmlFor="message" className="text-gray-700 mb-2">
-        Message
-      </label>
-      <textarea
-        id="message"
-        name="message"
-        className="border border-zinc-300 p-2 mb-4 h-32 rounded-md focus:outline-none focus:ring focus:border-blue-300"
-      />
-      <ValidationError prefix="Message" field="message" errors={state.errors} />
-      <div className='flex justify-center'>
-        <button
-          type="submit"
-          disabled={state.submitting}
-          className="relative px-6 py-2 bg-[#eef5fd] hover:bg-gray-100 rounded-full flex items-center justify-center divide-x divide-gray-600 focus:outline-none focus:ring focus:border-blue-300"
-        >
-          <span className="flex items-center justify-center">
-            <span className="text-black group-hover:text-black transition duration-200">
-              {state.submitting ? "Submitting..." : "Submit"}
+        <label htmlFor="message" className="text-gray-700 mb-2">
+          Message
+        </label>
+        <textarea
+          id="message"
+          name="message"
+          className="border border-zinc-300 p-2 mb-4 h-32 rounded-md focus:outline-none focus:ring focus:border-blue-300"
+        />
+        <ValidationError prefix="Message" field="message" errors={state.errors} />
+        <div className='flex justify-center'>
+          <button
+            type="submit"
+            disabled={state.submitting}
+            className="relative px-6 py-2 bg-[#eef5fd] hover:bg-gray-100 rounded-full flex items-center justify-center divide-x divide-gray-600 focus:outline-none focus:ring focus:border-blue-300"
+          >
+            <span className="flex items-center justify-center">
+              <span className="text-black group-hover:text-black transition duration-200">
+                {state.submitting ? "Submitting" : "Submit"}
+              </span>
             </span>
-          </span>
-        </button>
-      </div>
-    </form>
+          </button>
+        </div>
+      </form>
+    </div>
   );
 }
 
