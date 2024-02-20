@@ -31,12 +31,12 @@ const Hero = () => {
           </div>
           <h1 className="z-10 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.05em] text-transparent drop-shadow-sm [text-wrap:balance] md:text-7xl">
             <div className="flex flex-col">
-              <div>Bridging Real-World Data</div>
-              <div>to AOS effortlessly.</div>
+              <div>First ever Decentralised</div>
+              <div>Oracle on Arweave.</div>
             </div>
           </h1>
           <p className="text-center text-gray-500 text-wrap:balance md:text-xl pt-4">
-            The missing piece is effortlessly<br /> connecting any real-world data to AOS
+            Build with Permanent Data 
           </p>
         </div>
         <div className='flex gap-4 pt-4'>

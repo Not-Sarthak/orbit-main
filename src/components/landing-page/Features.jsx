@@ -14,9 +14,9 @@ const Features = () => {
           <div className="flex items-center justify-center flex-col gap-2 px-4">
             <img src={cost} className='w-60 h-60'/>
             <h2 class="bg-gradient-to-br from-black to-stone-500 bg-clip-text font-display text-xl font-bold text-transparent [text-wrap:balance] md:text-3xl md:font-normal">
-              Cost-Effective Data Access
+              Data Access
             </h2>
-            <p className='text-center text-gray-500'>Redefining data access economics, our decentralized approach ensures cost-effectiveness without compromising on quality.</p>
+            <p className='text-center text-gray-500'>Get any data on Arweave including both on-chain and off-chain.</p>
           </div>
         </div>
 
@@ -27,7 +27,7 @@ const Features = () => {
             <h2 class="bg-gradient-to-br from-black to-stone-500 bg-clip-text font-display text-xl font-bold text-transparent [text-wrap:balance] md:text-3xl md:font-normal">
               Permissionless
             </h2>
-            <p className='text-center text-gray-500'>Engage freely, without constraints.</p>
+            <p className='text-center text-gray-500'>Anyone can utilise 0rbit without asking permission from the team.</p>
           </div>
         </div>
 
@@ -38,31 +38,22 @@ const Features = () => {
             <h2 class="bg-gradient-to-br from-black to-stone-500 bg-clip-text font-display text-xl font-bold text-transparent [text-wrap:balance] md:text-3xl md:font-normal">
               Secure
             </h2>
-            <p className='text-center text-gray-500'>Built on a foundation of permanence, our decentralized platform ensures the unalterable integrity of your data and transactions.</p>
+            <p className='text-center text-gray-500'>0rbit provides secure path to get the data in any AO process.</p>
           </div>
         </div>
 
         {/* Section 4 */}
-        <div className="relative col-span-1 h-96 overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md">
+        <div className="relative col-span-1 h-96 overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md md:col-span-2">
           <div className="flex items-center justify-center flex-col gap-2 px-4">
             <img src={decentralized} className='w-60 h-60'/>
             <h2 class="bg-gradient-to-br from-black to-stone-500 bg-clip-text font-display text-xl font-bold text-transparent [text-wrap:balance] md:text-3xl md:font-normal">
               Decentralised
             </h2>    
-            <p className='text-center text-gray-500'>Redefining control, empowering users with a network that operates beyond central authority or single points of failure.</p>      
+            <p className='text-center text-gray-500'>The 0rbit nodes secures and provides accurate data by following the consensus.</p>      
           </div>
         </div>
 
         {/* Section 5 */}
-        <div className="relative col-span-1 h-96 overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md">
-          <div className="flex items-center justify-center flex-col gap-2 px-4">
-            <img src={transparent} className='w-60 h-60'/>
-            <h2 class="bg-gradient-to-br from-black to-stone-500 bg-clip-text font-display text-xl font-bold text-transparent [text-wrap:balance] md:text-3xl md:font-normal">
-              Transparent
-            </h2>    
-            <p className='text-center text-gray-500'>Illuminate every operation, fostering trust through a crystal-clear view of processes within our decentralized ecosystem.</p>      
-          </div>
-        </div>
       </div>
     </div>
   );
